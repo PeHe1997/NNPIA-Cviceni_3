@@ -1,0 +1,35 @@
+GET http://localhost:8080/user/books
+Result:
+[
+    {
+        "id": "1",
+        "name": "Maj"
+    },
+    {
+        "id": "2",
+        "name": "Kytice"
+    }
+]
+
+**********************************************
+
+POST http://localhost:8080/user/books
+JSON
+{
+    "id": "3",
+    "name": "Sto roku samoty"
+}
+Result:
+Book added
+
+**********************************************
+
+DELETE http://localhost:8080/user/books/3
+
+Result:
+Book was deleted
+
+
+
+
+
